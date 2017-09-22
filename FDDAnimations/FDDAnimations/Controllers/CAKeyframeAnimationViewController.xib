@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CAKeyframeAnimationViewController">
+            <connections>
+                <outlet property="moveView" destination="YFY-zp-TTe" id="wr7-Eo-Spc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0HF-Oo-Jvv">
+                    <rect key="frame" x="0.0" y="577" width="103" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="LQI-Re-wp9"/>
+                        <constraint firstAttribute="width" constant="103" id="YuB-ne-Pzi"/>
+                    </constraints>
+                    <state key="normal" title="position(位置)"/>
+                    <connections>
+                        <action selector="positionAnimationClick:" destination="-1" eventType="touchUpInside" id="7Jx-7e-uY5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPr-PY-81v">
+                    <rect key="frame" x="248" y="637" width="127" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="127" id="PdU-5R-EAg"/>
+                        <constraint firstAttribute="height" constant="30" id="rcf-ZW-AOk"/>
+                    </constraints>
+                    <state key="normal" title="path(路径)"/>
+                    <connections>
+                        <action selector="pathAnimationClick:" destination="-1" eventType="touchUpInside" id="Jon-1X-SZ4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNl-Qc-eyB">
+                    <rect key="frame" x="255" y="577" width="120" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="H8s-fm-pty"/>
+                        <constraint firstAttribute="width" constant="120" id="njv-S4-sDG"/>
+                    </constraints>
+                    <state key="normal" title="shake(旋转抖动)"/>
+                    <connections>
+                        <action selector="shakeAnimationClick:" destination="-1" eventType="touchUpInside" id="iyh-g5-nAE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aj-ux-NKo">
+                    <rect key="frame" x="0.0" y="637" width="94" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="4A1-Bq-yQp"/>
+                        <constraint firstAttribute="width" constant="94" id="6ZH-Mn-WNH"/>
+                    </constraints>
+                    <state key="normal" title="组合"/>
+                    <connections>
+                        <action selector="groupAnimationClick:" destination="-1" eventType="touchUpInside" id="4tp-S0-4F2"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YFY-zp-TTe">
+                    <rect key="frame" x="137" y="85" width="100" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9aj-ux-NKo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Eqp-cG-iyr"/>
+                <constraint firstItem="0HF-Oo-Jvv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="F52-KJ-JLM"/>
+                <constraint firstItem="tPr-PY-81v" firstAttribute="top" secondItem="aNl-Qc-eyB" secondAttribute="bottom" constant="30" id="Qa1-8q-jPe"/>
+                <constraint firstAttribute="bottom" secondItem="9aj-ux-NKo" secondAttribute="bottom" id="RTD-71-9M8"/>
+                <constraint firstAttribute="trailing" secondItem="tPr-PY-81v" secondAttribute="trailing" id="oma-SK-vih"/>
+                <constraint firstItem="9aj-ux-NKo" firstAttribute="top" secondItem="0HF-Oo-Jvv" secondAttribute="bottom" constant="30" id="sDF-xj-jRv"/>
+                <constraint firstAttribute="trailing" secondItem="aNl-Qc-eyB" secondAttribute="trailing" id="y1C-T2-L1V"/>
+                <constraint firstAttribute="bottom" secondItem="tPr-PY-81v" secondAttribute="bottom" id="zTK-pP-FAc"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

@@ -47,10 +47,8 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
         
     }
-    
     if (indexPath.row == 0) {
         cell.textLabel.text = @"CABasicAnimation";
-        
     }else if(indexPath.row == 1){
         cell.textLabel.text = @"CAKeyframeAnimationViewController";
         

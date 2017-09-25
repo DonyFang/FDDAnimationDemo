@@ -120,6 +120,13 @@
 			path = FDDFireWorksButton;
 			sourceTree = "<group>";
 		};
+		D94E1BD31F749D9E0009FDB5 /* FDDStarRateViewButton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FDDStarRateViewButton;
+			sourceTree = "<group>";
+		};
 		D963C75A1F712AAF00371BD2 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +150,7 @@
 		D963C7651F712AAF00371BD2 /* FDDAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				D94E1BD31F749D9E0009FDB5 /* FDDStarRateViewButton */,
 				D94E1BCC1F725F390009FDB5 /* FDDFireWorksButton */,
 				D963C7991F71346400371BD2 /* Controllers */,
 				D963C7691F712AAF00371BD2 /* AppDelegate.h */,

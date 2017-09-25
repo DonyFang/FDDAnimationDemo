@@ -13,6 +13,7 @@
 		D94E1BCB1F723EA70009FDB5 /* ShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D94E1BC91F723EA70009FDB5 /* ShowViewController.xib */; };
 		D94E1BCF1F725F510009FDB5 /* FDDFireWorksView.m in Sources */ = {isa = PBXBuildFile; fileRef = D94E1BCE1F725F510009FDB5 /* FDDFireWorksView.m */; };
 		D94E1BD21F7268220009FDB5 /* FDDFireworksButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D94E1BD11F7268220009FDB5 /* FDDFireworksButton.m */; };
+		D94E1BDB1F7894310009FDB5 /* FDDStarRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = D94E1BDA1F7894310009FDB5 /* FDDStarRateView.m */; };
 		D963C7681F712AAF00371BD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D963C7671F712AAF00371BD2 /* main.m */; };
 		D963C76B1F712AAF00371BD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D963C76A1F712AAF00371BD2 /* AppDelegate.m */; };
 		D963C7711F712AAF00371BD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D963C76F1F712AAF00371BD2 /* Main.storyboard */; };
@@ -57,6 +58,8 @@
 		D94E1BCE1F725F510009FDB5 /* FDDFireWorksView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDDFireWorksView.m; sourceTree = "<group>"; };
 		D94E1BD01F7268220009FDB5 /* FDDFireworksButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDDFireworksButton.h; sourceTree = "<group>"; };
 		D94E1BD11F7268220009FDB5 /* FDDFireworksButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDDFireworksButton.m; sourceTree = "<group>"; };
+		D94E1BD91F7894310009FDB5 /* FDDStarRateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDDStarRateView.h; sourceTree = "<group>"; };
+		D94E1BDA1F7894310009FDB5 /* FDDStarRateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDDStarRateView.m; sourceTree = "<group>"; };
 		D963C7631F712AAF00371BD2 /* FDDAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FDDAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D963C7671F712AAF00371BD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D963C7691F712AAF00371BD2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -123,6 +126,8 @@
 		D94E1BD31F749D9E0009FDB5 /* FDDStarRateViewButton */ = {
 			isa = PBXGroup;
 			children = (
+				D94E1BD91F7894310009FDB5 /* FDDStarRateView.h */,
+				D94E1BDA1F7894310009FDB5 /* FDDStarRateView.m */,
 			);
 			path = FDDStarRateViewButton;
 			sourceTree = "<group>";
@@ -353,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D963C7A01F7134A300371BD2 /* CABasicAnimationViewController.m in Sources */,
+				D94E1BDB1F7894310009FDB5 /* FDDStarRateView.m in Sources */,
 				D963C76B1F712AAF00371BD2 /* AppDelegate.m in Sources */,
 				D94E1BC51F721A7A0009FDB5 /* AffineTransformAnimationViewController.m in Sources */,
 				D963C79C1F71346400371BD2 /* ViewController.m in Sources */,

@@ -8,11 +8,13 @@
 
 #import "ShowViewController.h"
 #import "FDDFireworksButton.h"
+#import "FDDStarRateView.h"
 #define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
 #define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
-@interface ShowViewController ()
+@interface ShowViewController ()<FDDStarRateViewDelegate>
 @property(nonatomic,strong)FDDFireworksButton *fireworksBut;
 @property (nonatomic , assign) BOOL selected;
+@property (strong, nonatomic) FDDStarRateView *starRateView;
 
 @end
 
@@ -30,6 +32,15 @@
     
     [_fireworksBut addTarget:self action:@selector(handleButtonPress:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_fireworksBut];
+    
+    
+    self.starRateView = [[FDDStarRateView alloc] initWithFrame:CGRectMake(10, 100, 300, 40) numberOfStars:5 starStyle:IncompleteStar];
+    self.starRateView.scorePercent = 0;
+    self.starRateView.delegate = self;
+    self.starRateView.hasAnimation = YES;
+    [self.view addSubview:self.starRateView];
+    
+    
 }
 
 
@@ -45,5 +56,13 @@
         [_fireworksBut setImage:[UIImage imageNamed:@"Like"] forState:UIControlStateNormal];
     }
 }
+
+#pragma mark---- delegate
+
+- (void)starRateView:(FDDStarRateView *)starRateView scroePercentDidChange:(CGFloat)newScorePercent{
+    
+    
+}
+
 
 @end
